@@ -1,0 +1,27 @@
+package Gra;
+
+import java.util.Scanner;
+
+public class PokerMain {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		int NumberOfPlayers;
+		int Stack;
+
+
+		System.out.println("Enter the initial values");
+		System.out.print("Enter number of players (2-9): ");
+		NumberOfPlayers = input.nextInt();
+		System.out.println();
+		System.out.println("number of players: " + NumberOfPlayers);
+		System.out.print("Enter starting stack size: ");
+		Stack = input.nextInt();
+		System.out.println();
+		System.out.println("Stack size equals: "+Stack);
+
+		input.close();
+	}
+
+}
