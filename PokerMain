@@ -9,6 +9,14 @@ public class PokerMain {
 
 		int NumberOfPlayers;
 		int Stack;
+		int BigBlindSize;
+
+		Card[] deck = new Card[52];   //creating deck of 52 cards, some of them may be the same
+		for (int i = 0; i < deck.length; i++){
+			deck[i] = new Card(Gra.Card.ranks[(int)(Math.random()*13)],Gra.Card.suits[(int)(Math.random()*4)]);
+		}
+
+		deck[0].PrintCard();
 
 
 		System.out.println("Enter the initial values");
@@ -20,6 +28,17 @@ public class PokerMain {
 		Stack = input.nextInt();
 		System.out.println();
 		System.out.println("Stack size equals: "+Stack);
+		System.out.print("Enter Big Blind size: ");
+		BigBlindSize = input.nextInt();
+		System.out.println("Big Blind is set to: "+BigBlindSize );
+
+		// choosing a dealer
+
+		for (int i = 0; i<NumberOfPlayers; i++){
+			System.out.print("player" + (i+1) + " has ");
+			deck[i].PrintCard();
+			System.out.println();
+		}
 
 		input.close();
 	}
