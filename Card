@@ -1,0 +1,21 @@
+package Gra;
+
+public class Card {
+
+
+	static String[] suits = {"Hearts", "Diamonds", "Spades", "Clubs"};
+	static String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+
+	String suit;
+	String rank;
+
+
+		Card(String rank, String suit) {
+		this.rank = rank;
+		this.suit = suit;
+	}
+	void PrintCard() {
+		System.out.print(rank + " of " + suit );
+	}
+
+}
