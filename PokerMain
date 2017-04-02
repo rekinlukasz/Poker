@@ -32,6 +32,8 @@ public class PokerMain {
 		BigBlindSize = input.nextInt();
 		System.out.println("Big Blind is set to: "+BigBlindSize );
 
+		System.out.println("git branch training" // GITHUB COMMENT
+
 		// choosing a dealer
 
 		for (int i = 0; i<NumberOfPlayers; i++){
