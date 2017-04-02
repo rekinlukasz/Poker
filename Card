@@ -18,4 +18,6 @@ public class Card {
 		System.out.print(rank + " of " + suit );
 	}
 
+	// Github commit
+
 }
